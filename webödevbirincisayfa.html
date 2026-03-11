@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web tasarımı 2. ödev</title>
+</head>
+<body>
+
+    <h1>KAYISININ BAŞKENTİ: MALATYA'YA HOŞGELDİNİZ</h1>
+    <h4>Aşağıdaki resmin SOL kısmına tıklayarak KAYISI hakkında bilgi alabilirsiniz.
+       SAĞ kısmına tıklayarak BELEDİYEhakkında bilgi alabilirsiniz.</h4>
+
+    <img src="resimler/malatyaharita.jpg" usemap="#malatya_haritasi" alt="MALATYA" style="width: 800px;;">
+    <h3>Malatya: Kayısı ve Tarihin Buluştuğu Şehir</h3>
+    <p>
+        <strong>Tarih:</strong> İnsanlık tarihinin ilk bürokratik devlet yapısına ev sahipliği yapan UNESCO mirası Arslantepe Höyüğü ile medeniyetin köklerini barındırır.<br><br>
+        <strong>Lezzet:</strong> Dünyanın "Kayısı Başkenti"dir; sofralarını ise kağıt kebabı ve eşsiz bulgur köfteleri süsler.<br><br>
+        <strong>Ruh:</strong> Fırat'ın bereketiyle harmanlanmış, Battalgazi'nin manevi mirasını taşıyan, misafirperver ve dirençli insanların şehridir.
+    </p>
+
+    <div style="margin-top: 20px;">
+        <h3>Şehri Keşfedin: 
+            <a href="https://www.tripadvisor.com.tr/Attractions-g298018-Activities-Malatya.html" target="_blank">
+                Malatya'da Gezilecek Yerler TIKLAYINIZ 🎉
+            </a>
+        </h3>
+    </div>
+    <h3>Mutfağımızı Tanıyın: 
+        <a href="mutfak_kulturu.html">Malatya Yemekleri ve Lezzet Durakları</a>
+    </h3>
+
+
+    <map name="malatya_haritasi">
+            <area shape="rect" coords="0,0,400,400" href="kayisi_detay.html" alt="Kayısı Bilgi">
+            
+            <area shape="rect" coords="400,0,800,400" href="https://www.malatya.bel.tr" alt="Belediye">
+        </map>
+
+</body>
+</html>
