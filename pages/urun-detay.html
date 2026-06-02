@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Güneş Gözlüğü Detayı | Yasemin'in Mağazası</title>
+    <!-- CSS dosyasının yolu "../" ile başlıyor çünkü pages klasörü içindeyiz -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="../index.html">Yasemin'in Mağazası.</a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html" class="active">Ürünler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            
+            <div class="cart-icon">
+                <a href="sepet.html">🛒 Sepet <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Üst kısımdaki geri dönüş linki -->
+            <a href="urunler.html" class="back-link">&larr; Tüm Ürünlere Dön</a>
+            
+            <div class="product-detail-wrapper">
+                <div class="product-detail-image">
+                    <!-- Ürün Görseli -->
+                    <img src="../img/gozluk.png" alt="Modern Güneş Gözlüğü">
+                </div>
+                
+                <div class="product-detail-info">
+                    <h2>Modern Güneş Gözlüğü</h2>
+                    <div class="price">850 TL</div>
+                    
+                    <p>
+                        Yaz aylarının vazgeçilmezi modern tasarımlı güneş gözlüğü. 
+                        Siyah camları ve altın sarısı çerçevesiyle tarzınızı tamamlar. 
+                        %100 UV koruması sayesinde gözlerinizi zararlı güneş ışınlarından 
+                        korurken şıklığınızdan ödün vermeyin.
+                    </p>
+
+                    <!-- Özellikler listesi -->
+                    <ul class="feature-list">
+                        <li>%100 UV Koruması</li>
+                        <li>Hafif ve dayanıklı metal çerçeve</li>
+                        <li>Çizilmelere karşı dirençli camlar</li>
+                        <li>2 yıl garanti</li>
+                    </ul>
+
+                    <!-- Sepete Ekle Butonu -->
+                    <button class="btn btn-primary btn-block add-to-cart-btn" data-name="Modern Güneş Gözlüğü" data-price="850" data-image="gozluk.png">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasemin'in Mağazası.</div>
+                <div class="footer-links">
+                    <a href="#">Hakkımızda</a>
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Şartlar</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Yasemin'in Mağazası. Web Tasarımı ve İnternet Programlama Dersi Ödevi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS dosyasının yolu -->
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>

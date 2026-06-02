@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern E-Ticaret Sitesi - En iyi ürünler en uygun fiyatlarla.">
+    <title>Yasemin'in Mağazası | Modern E-Ticaret</title>
+    <!-- Harici CSS dosyamızı bağlıyoruz -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Üst Menü (Navbar) -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">Yasemin'in Mağazası.</a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="pages/urunler.html">Ürünler</a></li>
+                    <li><a href="pages/iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            
+            <div class="cart-icon">
+                <a href="pages/sepet.html">🛒 Sepet <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main>
+        <div class="container">
+            <!-- Kahraman (Hero) Bölümü -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Teknolojiyi Şıklıkla Buluşturun.</h1>
+                    <p>En yeni nesil premium kulaklıklar, akıllı saatler ve çok daha fazlası. Kaliteyi hissetmek için hemen alışverişe başlayın.</p>
+                    <a href="pages/urunler.html" class="btn btn-primary">Ürünleri Keşfet</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Ürettiğimiz kulaklık görselini kullanıyoruz -->
+                    <img src="img/kulaklik.png" alt="Premium Kulaklık">
+                </div>
+            </section>
+
+            <!-- Öne Çıkan Ürünler (Küçük Grid) -->
+            <section class="featured-products">
+                <h2 class="section-title">Öne Çıkanlar</h2>
+                <div class="product-grid">
+                    
+                    <!-- Ürün 1 -->
+                    <div class="product-card">
+                        <img src="img/saat.png" alt="Klasik Saat" class="product-image">
+                        <div class="product-info">
+                            <h3>Klasik Deri Saat</h3>
+                            <div class="product-price">1250 TL</div>
+                            <!-- Sepete ekleme fonksiyonunu (JS) tetikleyen buton -->
+                            <button class="btn btn-outline add-to-cart-btn" data-name="Klasik Deri Saat" data-price="1250" data-image="saat.png">Sepete Ekle</button>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 2 -->
+                    <div class="product-card">
+                        <img src="img/gozluk.png" alt="Güneş Gözlüğü" class="product-image">
+                        <div class="product-info">
+                            <h3>Modern Güneş Gözlüğü</h3>
+                            <div class="product-price">850 TL</div>
+                            <button class="btn btn-outline add-to-cart-btn" data-name="Modern Güneş Gözlüğü" data-price="850" data-image="gozluk.png">Sepete Ekle</button>
+                        </div>
+                    </div>
+
+                    <!-- Ürün 3 -->
+                    <div class="product-card">
+                        <img src="img/hoparlor.png" alt="Akıllı Hoparlör" class="product-image">
+                        <div class="product-info">
+                            <h3>Akıllı Ev Hoparlörü</h3>
+                            <div class="product-price">2100 TL</div>
+                            <button class="btn btn-outline add-to-cart-btn" data-name="Akıllı Ev Hoparlörü" data-price="2100" data-image="hoparlor.png">Sepete Ekle</button>
+                        </div>
+                    </div>
+
+                    <!-- Yeni Ürünler -->
+                <div class="product-card">
+                    <img src="img/tablet.png" alt="Akıllı Tablet" class="product-image">
+                    <div class="product-info">
+                        <h3>Akıllı Tablet</h3>
+                        <div class="product-price">5500 TL</div>
+                        <button class="btn btn-outline add-to-cart-btn" data-name="Akıllı Tablet" data-price="5500" data-image="tablet.png">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/kamera.png" alt="Dijital Kamera" class="product-image">
+                    <div class="product-info">
+                        <h3>Dijital Kamera</h3>
+                        <div class="product-price">12000 TL</div>
+                        <button class="btn btn-outline add-to-cart-btn" data-name="Dijital Kamera" data-price="12000" data-image="kamera.png">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/canta.png" alt="Deri Sırt Çantası" class="product-image">
+                    <div class="product-info">
+                        <h3>Deri Sırt Çantası</h3>
+                        <div class="product-price">950 TL</div>
+                        <button class="btn btn-outline add-to-cart-btn" data-name="Deri Sırt Çantası" data-price="950" data-image="canta.png">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/parfum.png" alt="Özel Tasarım Parfüm" class="product-image">
+                    <div class="product-info">
+                        <h3>Özel Tasarım Parfüm</h3>
+                        <div class="product-price">1500 TL</div>
+                        <button class="btn btn-outline add-to-cart-btn" data-name="Özel Tasarım Parfüm" data-price="1500" data-image="parfum.png">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+            <section class="quiz-section">
+                <div class="container">
+                    <div class="quiz-container">
+                        <h2>🎁 %15 İndirim Kazanma Şansı!</h2>
+                        <p id="quiz-question">Bir e-ticaret sitesinde sepetteki ürünlerin tutulduğu tarayıcı hafızasına ne ad verilir?</p>
+                        <div class="quiz-options">
+                            <button class="btn btn-outline quiz-btn" data-answer="A">A) RAM</button>
+                            <button class="btn btn-outline quiz-btn" data-answer="B">B) localStorage</button>
+                            <button class="btn btn-outline quiz-btn" data-answer="C">C) CPU</button>
+                        </div>
+                        <div id="quiz-result" class="quiz-result"></div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- Alt Bilgi (Footer) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasemin'in Mağazası.</div>
+                <div class="footer-links">
+                    <a href="#">Hakkımızda</a>
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Şartlar</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Yasemin'in Mağazası. Web Tasarımı ve İnternet Programlama Dersi Ödevi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Harici JavaScript dosyamızı sayfanın en altında bağlıyoruz -->
+    <script src="scripts/myscript.js"></script>
+</body>
+</html>
