@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Yasemin'in Mağazası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="../index.html">Yasemin'in Mağazası.</a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            
+            <div class="cart-icon">
+                <a href="sepet.html" class="active">🛒 Sepet <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Sepetiniz</h1>
+            
+            <div class="cart-container">
+                <!-- Sepetteki ürünler javascript (myscript.js) tarafından buraya eklenecektir -->
+                <div id="cart-items">
+                    <!-- Sepet boşsa veya yükleniyorsa varsayılan mesaj -->
+                    <p>Sepetiniz yükleniyor...</p>
+                </div>
+                
+                <!-- Sepet Toplamı -->
+                <div class="cart-summary">
+                    <h3>Toplam Tutar: <span id="cart-total">0 TL</span></h3>
+                    <button class="btn btn-primary" id="checkout-btn">Alışverişi Tamamla</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Yasemin'in Mağazası.</div>
+                <div class="footer-links">
+                    <a href="#">Hakkımızda</a>
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Şartlar</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Yasemin'in Mağazası. Web Tasarımı ve İnternet Programlama Dersi Ödevi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS dosyamızı bağlıyoruz. Sepet işlemleri bu dosyada gerçekleşir. -->
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
